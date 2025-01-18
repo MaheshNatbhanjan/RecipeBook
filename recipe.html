@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Recipe Book</h1>
+
+        <!-- Indian Cuisine Section -->
+        <div id="indian-cuisine">
+            <h2>Indian Food Recipes</h2>
+            <ul>
+                <li onclick="showRecipe('Butter Chicken')">Butter Chicken</li>
+                <li onclick="showRecipe('Paneer Butter Masala')">Paneer Butter Masala</li>
+                <li onclick="showRecipe('Biryani')">Biryani</li>
+                <li onclick="showRecipe('Chole Bhature')">Chole Bhature</li>
+                <li onclick="showRecipe('Samosa')">Samosa</li>
+                <li onclick="showRecipe('Aloo Paratha')">Aloo Paratha</li>
+                <li onclick="showRecipe('Dosa')">Dosa</li>
+            </ul>
+        </div>
+
+        <!-- Western Cuisine Section -->
+        <div id="western-cuisine">
+            <h2>Western Food Recipes</h2>
+            <ul>
+                <li onclick="showRecipe('Spaghetti Bolognese')">Spaghetti Bolognese</li>
+                <li onclick="showRecipe('Pizza')">Pizza</li>
+                <li onclick="showRecipe('Burger')">Burger</li>
+                <li onclick="showRecipe('Mac and Cheese')">Mac and Cheese</li>
+                <li onclick="showRecipe('Caesar Salad')">Caesar Salad</li>
+                <li onclick="showRecipe('Steak')">Steak</li>
+                <li onclick="showRecipe('Apple Pie')">Apple Pie</li>
+            </ul>
+        </div>
+
+        <!-- Asian Cuisine Section -->
+        <div id="asian-cuisine">
+            <h2>Asian Food Recipes</h2>
+            <ul>
+                <li onclick="showRecipe('Sushi')">Sushi</li>
+                <li onclick="showRecipe('Pad Thai')">Pad Thai</li>
+                <li onclick="showRecipe('Ramen')">Ramen</li>
+                <li onclick="showRecipe('Dim Sum')">Dim Sum</li>
+                <li onclick="showRecipe('Tom Yum Soup')">Tom Yum Soup</li>
+                <li onclick="showRecipe('Fried Rice')">Fried Rice</li>
+                <li onclick="showRecipe('Spring Rolls')">Spring Rolls</li>
+            </ul>
+        </div>
+
+        <!-- Recipe Details Section -->
+        <div id="recipe-list">
+            <!-- The Recipe List will stay visible, and the details will be shown when a recipe is clicked -->
+        </div>
+
+        <!-- Recipe Details Section -->
+        <div id="recipe-details" class="hidden">
+            <button id="back-button" onclick="backToList()">Back</button>
+            <h2 id="recipe-name"></h2>
+            <h3>Ingredients:</h3>
+            <ul id="ingredients-list"></ul>
+            <h3>Instructions:</h3>
+            <p id="instructions"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>     

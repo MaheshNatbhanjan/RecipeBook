@@ -1,0 +1,248 @@
+body {/* Global Styles */
+body {
+    background-color: #000;         /* Adds fallback background color */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Ensures the body takes up the full height of the viewport */
+}
+
+/* Style for the app container */
+#app {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;  /* Ensures content appears above the background image */
+}
+
+/* Front Page Title Section */
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF; /* White to contrast the dark background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Shadow for readability */
+    margin-top: 20px;
+}
+
+/* Cuisine Section Titles */
+h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Golden Yellow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* List items style */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Indian Cuisine */
+#indian-cuisine li {
+    color: #FFA07A; /* Light Salmon for contrast */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Hover Effect for List Items */
+li:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Adds hover effect */
+    color: #FFFFFF; /* Changes text to white on hover */
+}
+
+/* Recipe Details Section */
+#recipe-details {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    display: none;
+    color: white;
+    text-align: left;
+    z-index: 2;  /* Ensures the recipe details appear above the background */
+}
+
+/* Back Button */
+#back-button {
+    background-color: #FFD700; /* Golden Yellow */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#back-button:hover {
+    background-color: #DAA520; /* Darker Gold */
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF; /* White */
+}
+
+/* Specific Styles for Butter Chicken Page */
+#butter-chicken {
+    background-image: url('https://st2.depositphotos.com/1585301/6747/i/450/depositphotos_67472559-stock-photo-herbs-and-spices-on-wood.jpg');
+    background-size: cover;         /* Ensures the image covers the entire page */
+    background-position: center center;    /* Centers the image */
+    background-attachment: fixed;   /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat;   /* Prevents repeating the image */
+    height: 100vh;                  /* Full page height */
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    #recipe-details {
+        padding: 10px;
+    }
+}
+
+    background-image: url('https://st2.depositphotos.com/1585301/6747/i/450/depositphotos_67472559-stock-photo-herbs-and-spices-on-wood.jpg');
+    background-size: cover;         /* Ensures the image covers the entire page */
+    background-position: center center;    /* Centers the image on both axes */
+    background-attachment: fixed;   /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat;   /* Prevents repeating the image */
+    background-color: #000;         /* Adds fallback background color */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Ensures the body takes up the full height of the viewport */
+    object-fit: cover;
+}
+
+/* Style for the app container */
+#app {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;  /* Ensures content appears above the background image */
+}
+
+/* Front Page Title Section */
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF; /* White to contrast the dark background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Shadow for readability */
+    margin-top: 20px;
+}
+
+/* Cuisine Section Titles */
+h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Golden Yellow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* List items style */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Indian Cuisine */
+#indian-cuisine li {
+    color: #FFA07A; /* Light Salmon for contrast */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Western Cuisine */
+#western-cuisine li {
+    color: #B0E0E6; /* Light Blue */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Asian Cuisine */
+#asian-cuisine li {
+    color: #98FB98; /* Pale Green */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Hover Effect for List Items */
+li:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Adds hover effect */
+    color: #FFFFFF; /* Changes text to white on hover */
+}
+
+/* Recipe Details Section */
+#recipe-details {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    display: none;
+    color: red;
+    text-align: left;
+    z-index: 2;  /* Ensures the recipe details appear above the background */
+}
+
+/* Back Button */
+#back-button {
+    background-color: #FFD700; /* Golden Yellow */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#back-button:hover {
+    background-color: #DAA520; /* Darker Gold */
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF; /* White */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    #recipe-details {
+        padding: 10px;
+    }
+}
